@@ -1,0 +1,34 @@
+
+<ons-navigator var="myNavigator">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <a href="#/"><ons-back-button>Return</ons-back-button></a>
+      </div>
+      <div class="center">SuperCamera1.0</div>
+      <div class="right">
+        <ons-toolbar-button>
+          <a href="#/photo" class="link-camera"><ons-icon icon="md-camera"></ons-icon></a>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+	
+	<img ng-src="{{media.data}}" width="100%"/>
+    <ons-list>
+      <ons-list-header>Details</ons-list-header>
+      <ons-list-item>Created in: {{media.date_create}}</ons-list-item>
+      <ons-list-item>Title: {{media.title}}</ons-list-item>
+      <ons-list-item>Lat: {{media.lat}}</ons-list-item>
+      <ons-list-item>Lon: {{media.lon}}</ons-list-item>
+      <ons-list-item>Width: {{media.width}}</ons-list-item>
+      <ons-list-item>Height: {{media.height}}</ons-list-item>
+      <ons-list-item>Size: {{(media.size / 1048576).toFixed(2)}}mb</ons-list-item>
+      <ons-list-item>Data: {{media.data}}</ons-list-item>
+      <ons-list-item>Thumb: {{media.thumbnail}}</ons-list-item>
+      <ons-list-item>ID: {{media.id}}</ons-list-item>
+    <ons-list>
+
+
+    <br/>
+  </ons-page>
+</ons-navigator>

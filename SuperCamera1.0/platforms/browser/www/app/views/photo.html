@@ -1,0 +1,24 @@
+
+<ons-navigator var="myNavigator">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <a href="#/"><ons-back-button>Voltar</ons-back-button></a>
+      </div>
+      <div class="center">PDM FotoLOGO</div>
+    </ons-toolbar>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <p style="margin-botton: 15px;">
+
+        <ons-button ng-click="novaFoto()"><ons-icon icon="md-camera-add"></ons-icon> Nova Foto</ons-button>
+
+        <ons-button ng-click="salvar()" ng-disabled="buttonCheck"><ons-icon icon="md-save"></ons-icon> Salvar Foto</ons-button>
+
+      </p>
+      <canvas id="canvas" width="100%" ></canvas>
+    </div>
+
+    <br/>
+  </ons-page>
+</ons-navigator>

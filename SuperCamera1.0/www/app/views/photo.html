@@ -1,0 +1,24 @@
+
+<ons-navigator var="myNavigator">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <a href="#/"><ons-back-button>Return</ons-back-button></a>
+      </div>
+      <div class="center">SuperCamera1.0</div>
+    </ons-toolbar>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <p style="margin-bottom: 15px;">
+
+        <ons-button ng-click="novaFoto()"><ons-icon icon="md-camera-add"></ons-icon> New Photo</ons-button>
+		
+        <ons-button ng-click="salvar()" ng-disabled="buttonCheck"><ons-icon icon="md-save"></ons-icon> Save</ons-button>
+
+      </p>
+      <canvas id="canvas" width="75%" ></canvas>
+    </div>
+
+    <br/>
+  </ons-page>
+</ons-navigator>

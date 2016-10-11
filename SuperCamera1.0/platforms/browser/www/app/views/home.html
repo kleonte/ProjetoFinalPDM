@@ -1,0 +1,33 @@
+
+<ons-navigator var="myNavigator">
+  <ons-page>
+    <ons-toolbar>
+      <div class="center">SuperCamera1.0</div>
+      <div class="right">
+        <ons-toolbar-button>
+          <a class="link-camera" ng-click="updateGallery()"><ons-icon icon="md-refresh"></ons-icon></a>
+        </ons-toolbar-button>
+		<ons-toolbar-button>
+          <a href="#/photo" class="link-camera"><ons-icon icon="md-camera"></ons-icon></a>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+
+    <h2 class="aling-center">{{ msg }} : ({{images.length > 0 ? images.length - 1 : 0}})</h2>
+
+    <div id="content">
+
+    </div>
+
+
+    <div class="list-image-gallery" ng-repeat="image in images">
+      <a href="#/image/{{image.title}}" class="image">
+        <img ng-src="{{image.data}}" width="100%"/>
+        <br>
+      </a>
+    </div>
+
+
+    <br/>
+  </ons-page>
+</ons-navigator>
